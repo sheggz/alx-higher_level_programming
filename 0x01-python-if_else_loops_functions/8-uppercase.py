@@ -6,5 +6,3 @@ def uppercase(str):
             offset = ord('A') - ord('a')
         print("{:c}".format(ord(char) + offset), end='')
     print()
-
-
