@@ -7,6 +7,4 @@ def uppercase(str):
         print("{:c}".format(ord(char) + offset), end='')
     print()
 
-uppercase("best")
-uppercase("Best School 98 Battery street")
 
