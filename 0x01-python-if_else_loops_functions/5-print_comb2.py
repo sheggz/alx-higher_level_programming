@@ -5,4 +5,4 @@ for x in range(100):
     elif x == 99:
         print("{:02d}".format(x))
         # i'm not changing the end since
-        # last mumber should be follwed by new line 
+        # last mumber should be follwed by new line
