@@ -1,20 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "lists.h"
-/**
- * struct node - singly linked list to stor address of visited nodes
- * @traversed_node_add: holds address of a visited node (listint_t *)
- * @next: points to the next node in the linked list
- */
-typedef struct node
-{
-	listint_t *traversed_node_add;
-	struct node *next;
-} node;
-
-int check_list(listint_t *verify, node *against);
-int addnode (node **head, listint_t *focus_node);
-void free_nodes(node *head);
 
 /**
  * check_cycle - function to check singly linked list for cycle
