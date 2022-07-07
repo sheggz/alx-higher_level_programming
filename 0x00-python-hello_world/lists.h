@@ -3,16 +3,6 @@
 
 #include <stdlib.h>
 
-/**
- * struct node - singly linked list to stor address of visited nodes
- * @traversed_node_add: holds address of a visited node (listint_t *)
- * @next: points to the next node in the linked list
- */
-typedef struct node
-{
-        listint_t *traversed_node_add;
-        struct node *next;
-} node;
 
 /**
  * struct listint_s - singly linked list
@@ -27,6 +17,17 @@ typedef struct listint_s
     int n;
     struct listint_s *next;
 } listint_t;
+
+/**
+ * struct node - singly linked list to stor address of visited nodes
+ * @traversed_node_add: holds address of a visited node (listint_t *)
+ * @next: points to the next node in the linked list
+ */
+typedef struct node
+{
+        listint_t *traversed_node_add;
+        struct node *next;
+} node;
 
 size_t print_listint(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
