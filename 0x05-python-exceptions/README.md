@@ -2,10 +2,12 @@
 ___
 
 ## Description
-Errors encompass any irregularity that lead to a code not executing at all or\ executing wrongly. Exceptions are Errors detected during execution of a syntatically correct code.\ exceptions can be handled with "try, except, else and finally statements"
-> try: here, we write the code to be executed given the expected inputs
-> expect: here we write our response to an anticipated error given the wrong input
-> else: here, we write some code that executes if no error occurs
+Errors encompass any irregularity that lead to a code not executing at all or\
+executing wrongly. Exceptions are Errors detected during execution of a syntatically correct code.\
+exceptions can be handled with "try, except, else and finally statements"
+> try: here, we write the code to be executed given the expected inputs\
+> expect: here we write our response to an anticipated error given the wrong input\
+> else: here, we write some code that executes if no error occurs\
 finally: here, we write some code that executes whether an error occurs or not
 
 ___
