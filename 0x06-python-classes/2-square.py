@@ -1,40 +1,25 @@
 #!/usr/bin/python3
-"""This module implents some of the Class basics
-
+"""Square Class
+A Square Class
 """
 
 
 class Square:
-    """A Class to implement a square
-    """
-    def __init__(self, size=0):
-        """Initialize the size attribute
 
-        Args:
-            size (int): the size of the square
+    def __init__(self, size=0):
+        """__init__
+        The __init__ method initializes the size value of the square.
+        Attributes:
+            size (:obj:`int`, optional): The size of the square.
+        Raises:
+            TypeError: If `size` type is not `int`.
+            ValueError: If `size` is less than `0`.
         """
 
-        self.size = size  #: call the setter property fn
+        if type(size) is not int:
+            raise TypeError('size must be an integer')
 
-        @property
-        def size(self):
-            """Create a getter
+        if size < 0:
+            raise ValueError('size must be >= 0')
 
-            This will be used for accessing the private element
-            """
-            return self.__size
-
-        @size.setter
-        def size(self, size):
-            """A setter function
-            to set the private Variable with conditions
-
-            Args:
-                the size to be set
-            """
-
-            if type(size) is not int:
-                raise TypeError("size must be an integer")
-            if size < 0:
-                raise ValueError("size must be >= 0")
-            self.__size = size  #: if no error is raised, set private attr
+        self.__size = size
