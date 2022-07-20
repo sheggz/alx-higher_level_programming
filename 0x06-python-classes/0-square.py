@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Square Class that introduces class concept
-
+"""Square Class
 This class don't do anything for the moment
 """
 
