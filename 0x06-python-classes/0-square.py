@@ -3,7 +3,8 @@
 """Square Class
 
 This class is currently empty
-
 """
+
+
 class Square:
     pass
