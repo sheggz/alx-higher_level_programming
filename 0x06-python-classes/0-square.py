@@ -4,5 +4,6 @@
 
 This class is currently empty
 """
+
 class Square:
     pass
