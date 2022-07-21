@@ -7,7 +7,7 @@
 class Square:
     """A Class to implement a square
     """
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """Initialize the size attribute
 
         Args:
@@ -15,6 +15,7 @@ class Square:
         """
 
         self.size = size  #: call the setter property fn
+        self.position = position
 
     @property
     def size(self):
@@ -39,6 +40,30 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value  #: if no error is raised, set private attr
 
+    @property
+    def position(self):
+        return self.__position
+
+    @position.setter
+    def position(self, value):
+        """function to set the value of the private position attribute"""
+        msg = "position must be a tuple of 2 positive integers"
+        if type(value) is tuple and len(value) == 2:
+            if type(value[0]) is int and type(value[1]) is int:
+                self.__position = value
+            else:
+                raise TypeError(msg)
+        else:
+            raise TypeError(msg)
+
     def area(self):
         """function to compute area"""
         return (self.__size ** 2)
+
+    def my_print(self):
+        """A function that prints the square using '#'"""
+        if self.__size == 0:
+            print()
+        else:
+            for i in range(self.__size):
+                print("".join([" " * self.__position[0], "#" * self.__size]))
