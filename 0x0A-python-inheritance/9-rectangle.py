@@ -19,7 +19,7 @@ class Rectangle(BaseGeometry):
         """Method that calculates area of rectangle
         """
 
-        return __self.width * __self.height
+        return self.__width * self.__height
 
     def __str__(self):
         """Magic method to return rectangle description
