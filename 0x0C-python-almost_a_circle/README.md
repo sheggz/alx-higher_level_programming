@@ -18,14 +18,16 @@
 > * JSON
 ---
 ## Learning objectives
+
 What is Unit testing and how to implement it in a large project\
 How to serialize and deserialize a Class\
 How to write and read a JSON file\
-What is *args and how to use it\
+What is \*args and how to use it\
 What is **kwargs and how to use it\
-How to handle named arguments in a function\
+How to handle named arguments in a function
 ---
-# Tasks
+## Tasks
+
 _tests/_ : Create a test Folder
 _models/base.py, models/__init__.py_: Create a folder named models with an empty file __init__.py inside
 _models/rectangle.py_: wrtie the class Rectangle that inherits from Base 
