@@ -6,5 +6,5 @@ CREATE TABLE IF NOT EXISTS `hbtn_0d_usa`.`cities`(
     name VARCHAR(256) NOT NULL,
     CONSTRAINT `id` PRIMARY KEY `id`,
     CONSTRAINT `state_id` FOREIGN KEY (`state`)
-    REFERENCES `hbtn_0d_usa`.states(`id`)
+    REFERENCES `hbtn_0d_usa`.`states`(`id`)
 );
